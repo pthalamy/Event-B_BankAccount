@@ -17,8 +17,8 @@
 <org.eventb.core.guard name="." org.eventb.core.label="notRepeatedBalance" org.eventb.core.predicate="a ∉ dom(balance)"/>
 <org.eventb.core.refinesEvent name="/" org.eventb.core.target=" operate"/>
 </org.eventb.core.event>
-<org.eventb.core.variable name="+" org.eventb.core.comment="FUN2: the owner function keeps track of ownership by mapping a CLIENT owner to each ACCOUNT" org.eventb.core.identifier="owner"/>
-<org.eventb.core.variable name="," org.eventb.core.identifier="balance"/>
+<org.eventb.core.variable name="+" org.eventb.core.comment="FUN2: the owner partial function keeps track of ownership by mapping a CLIENT owner to each ACCOUNT" org.eventb.core.identifier="owner"/>
+<org.eventb.core.variable name="," org.eventb.core.comment="FUN3: the balance partial function keeps track of the balance of each ACCOUNT by mapping it to a natural number" org.eventb.core.identifier="balance"/>
 <org.eventb.core.invariant name="-" org.eventb.core.label="invBalance" org.eventb.core.predicate="balance ∈ ACCOUNT ⇸ ℕ"/>
 <org.eventb.core.invariant name="." org.eventb.core.label="invOwner" org.eventb.core.predicate="owner ∈ ACCOUNT ⇸ CLIENT"/>
 <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="operate">
